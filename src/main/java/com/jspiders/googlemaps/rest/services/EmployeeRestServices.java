@@ -5,6 +5,7 @@ import java.util.Set;
 
 import javax.ws.rs.BeanParam;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.CookieParam;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
@@ -24,6 +25,17 @@ import com.jspiders.googlemaps.dao.EmployeeDAO;
 @Path("/employee")
 @Produces(MediaType.APPLICATION_JSON)
 public class EmployeeRestServices {
+
+	/**
+	 * @Everytime the constructor gets executed... It is a costly Operation hence
+	 *            better to use a PARAMETERISED constructor!
+	 */
+	// public EmployeeRestServices() {
+	// System.err.println(" Inside EmployeeRestService ");
+	// }
+	public EmployeeRestServices(int i) {
+		System.err.println(" Inside EmployeeRestService ");
+	}
 
 	/**
 	 * 1. Using @BeanParam
@@ -75,6 +87,15 @@ public class EmployeeRestServices {
 		NewCookie cookie = new NewCookie("name", "pradeep");
 		ResponseBuilder builder = Response.ok("Cookie Created!", MediaType.TEXT_PLAIN);
 		return builder.cookie(cookie).build();
+	}
+
+	@GET
+	@Path("/readcookie")
+	@Produces(MediaType.TEXT_HTML)
+	public String readCookie(@CookieParam("name") String custId) {
+
+		String msg = "Recieved Cookie is: " + custId;
+		return msg;
 	}
 
 	@PUT
