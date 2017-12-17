@@ -1,0 +1,472 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Web-Services CURD",
+		"_postman_id": "5b5e1c28-f8a6-acd8-1557-f6f2d3a539db",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EmployeeCurd - WebService Assignment",
+			"description": "",
+			"item": [
+				{
+					"name": "BeanParam + Produes",
+					"request": {
+						"url": "http://localhost:8084/googlemaps/api/employee/createbeanproduces",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "eid",
+									"value": "7",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "fname",
+									"value": "Pradeep",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lname",
+									"value": "Naik",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "Software Engineer",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "Ejipura",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address2",
+									"value": "Bangalore",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "30",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "BeanParam",
+					"request": {
+						"url": "http://localhost:8084/googlemaps/api/employee/createbean",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "eid",
+									"value": "7",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "fname",
+									"value": "Pradeep",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lname",
+									"value": "Naik",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "Software Engineer",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "Ejipura",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address2",
+									"value": "Bangalore",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "30",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Employee",
+					"request": {
+						"url": "http://localhost:8084/googlemaps/api/employee/create",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "eid",
+									"value": "8",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "fname",
+									"value": "Pradeep",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lname",
+									"value": "Naik",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "Software Engineer",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "Ejipura",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address2",
+									"value": "Bangalore",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "30",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ReadAll Employees",
+					"request": {
+						"url": "http://localhost:8084/googlemaps/api/employee/readall",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "eid",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"url": {
+							"raw": "http://localhost:8084/googlemaps/api/employee/delete?eid=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"googlemaps",
+								"api",
+								"employee",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "eid",
+									"value": "6",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "eid",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Read Employee eid",
+					"request": {
+						"url": {
+							"raw": "http://localhost:8084/googlemaps/api/employee/read?eid=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"googlemaps",
+								"api",
+								"employee",
+								"read"
+							],
+							"query": [
+								{
+									"key": "eid",
+									"value": "6",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "eid",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Using JSON",
+					"request": {
+						"url": "http://localhost:8084/googlemaps/api/employee/createusingjson",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"address1\": \"Ejipura\",\n        \"address2\": \"Bangalore\",\n        \"designation\": \"Software Engineer\",\n        \"eid\": 8,\n        \"fname\": \"Pradeep\",\n        \"lname\": \"Naik\",\n        \"salary\": 30\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "File Download",
+					"request": {
+						"url": "http://localhost:8084/googlemaps/api/fileservice/download",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "File Upload",
+					"request": {
+						"url": "http://localhost:8084/googlemaps/api/uploadservice",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": "",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT Create Curd Request",
+			"request": {
+				"url": "http://localhost:8084/webservices/curd/api/create/Bangalore/Ejipura/583104",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "POST Update Curd Request",
+			"request": {
+				"url": "http://localhost:8084/webservices/curd/api/update",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE delete Curd Request",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8084/webservices/curd/api/delete?address=Ejipura",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"webservices",
+						"curd",
+						"api",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "Ejipura"
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET fetch Curd Request",
+			"request": {
+				"url": "http://localhost:8084/webservices/curd/api/get;address=Ejipura",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}
